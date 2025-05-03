@@ -17,7 +17,13 @@ function loadNotes() {
 // Notu HTML'e ekle
 function addNoteToDOM(noteText) {
     const li = document.createElement('li');
-    li.textContent = noteText;
+
+    // Notun tarih/saat bilgisini al
+    const date = new Date();
+    const dateString = date.toLocaleString(); // Örn: 03/05/2025, 15:30:00
+
+    // Notu ve tarihi birlikte ekle
+    li.textContent = `${noteText} (${dateString})`;
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Sil';
@@ -31,20 +37,6 @@ function addNoteToDOM(noteText) {
     noteList.appendChild(li);
 }
 
-function deleteNote(noteText) {
-    if (!fs.existsSync(notesFilePath)) return;
-
-    const data = fs.readFileSync(notesFilePath, 'utf8');
-    let notes = JSON.parse(data);
-
-    // Sadece ilk eşleşmeyi sil
-    const index = notes.indexOf(noteText);
-    if (index !== -1) {
-        notes.splice(index, 1);
-        fs.writeFileSync(notesFilePath, JSON.stringify(notes, null, 2));
-    }
-}
-
 
 // Not ekle ve kaydet
 function addNote() {
@@ -56,6 +48,7 @@ function addNote() {
     noteInput.value = '';
 }
 
+
 // Notu dosyaya kaydet
 function saveNote(noteText) {
     let notes = [];
@@ -63,9 +56,30 @@ function saveNote(noteText) {
         const data = fs.readFileSync(notesFilePath, 'utf8');
         notes = JSON.parse(data);
     }
-    notes.push(noteText);
+
+    // Notla birlikte tarih bilgisini kaydediyoruz
+    const date = new Date();
+    const dateString = date.toLocaleString(); // Örn: 03/05/2025, 15:30:00
+    notes.push({text: noteText, date: dateString});
+
     fs.writeFileSync(notesFilePath, JSON.stringify(notes, null, 2));
 }
+
+
+function deleteNote(noteText) {
+    if (!fs.existsSync(notesFilePath)) return;
+
+    const data = fs.readFileSync(notesFilePath, 'utf8');
+    let notes = JSON.parse(data);
+
+    // Metni arayarak eşleşen notu bul
+    const index = notes.findIndex(note => note.text === noteText);
+    if (index !== -1) {
+        notes.splice(index, 1);
+        fs.writeFileSync(notesFilePath, JSON.stringify(notes, null, 2));
+    }
+}
+
 
 // Sayfa yüklendiğinde notları getir
 window.onload = loadNotes;
