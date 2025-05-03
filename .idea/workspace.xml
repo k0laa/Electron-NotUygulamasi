@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1365b1de-f86f-40ef-bb56-d095e5e556f0" name="Changes" comment="bugfix.">
+    <list default="true" id="1365b1de-f86f-40ef-bb56-d095e5e556f0" name="Changes" comment="notlar kalıcı olarak kayıt edildi ve dizin modüler hale getirild.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/notes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Buğra Yalçın &lt;bugrayalcn1@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -95,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746277267695</updated>
       <workItem from="1746277268801" duration="566000" />
-      <workItem from="1746277881394" duration="1583000" />
+      <workItem from="1746277881394" duration="2650000" />
     </task>
     <task id="LOCAL-00001" summary="Electron uygulaması kuruldu.">
       <option name="closed" value="true" />
@@ -121,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746278853440</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="notlar kalıcı olarak kayıt edildi ve dizin modüler hale getirild.">
+      <option name="closed" value="true" />
+      <created>1746279721580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746279721581</updated>
+    </task>
+    <task id="LOCAL-00005" summary="notlar kalıcı olarak kayıt edildi ve dizin modüler hale getirild.">
+      <option name="closed" value="true" />
+      <created>1746279810736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746279810736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +151,7 @@
     <MESSAGE value="Electron uygulaması kuruldu." />
     <MESSAGE value="Geçici not alma işlevi eklendi." />
     <MESSAGE value="bugfix." />
-    <option name="LAST_COMMIT_MESSAGE" value="bugfix." />
+    <MESSAGE value="notlar kalıcı olarak kayıt edildi ve dizin modüler hale getirild." />
+    <option name="LAST_COMMIT_MESSAGE" value="notlar kalıcı olarak kayıt edildi ve dizin modüler hale getirild." />
   </component>
 </project>

@@ -18,8 +18,33 @@ function loadNotes() {
 function addNoteToDOM(noteText) {
     const li = document.createElement('li');
     li.textContent = noteText;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Sil';
+    deleteBtn.style.marginLeft = '10px';
+    deleteBtn.onclick = () => {
+        li.remove();
+        deleteNote(noteText);
+    };
+
+    li.appendChild(deleteBtn);
     noteList.appendChild(li);
 }
+
+function deleteNote(noteText) {
+    if (!fs.existsSync(notesFilePath)) return;
+
+    const data = fs.readFileSync(notesFilePath, 'utf8');
+    let notes = JSON.parse(data);
+
+    // Sadece ilk eşleşmeyi sil
+    const index = notes.indexOf(noteText);
+    if (index !== -1) {
+        notes.splice(index, 1);
+        fs.writeFileSync(notesFilePath, JSON.stringify(notes, null, 2));
+    }
+}
+
 
 // Not ekle ve kaydet
 function addNote() {
