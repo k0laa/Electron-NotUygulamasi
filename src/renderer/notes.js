@@ -10,7 +10,7 @@ function loadNotes() {
     if (fs.existsSync(notesFilePath)) {
         const data = fs.readFileSync(notesFilePath, 'utf8');
         const notes = JSON.parse(data);
-        notes.forEach(note => addNoteToDOM(note));
+        notes.forEach(note => addNoteToDOM(note.text));
     }
 }
 
@@ -27,6 +27,9 @@ function addNoteToDOM(noteText) {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Sil';
+    deleteBtn.style.backgroundColor = 'red';
+    deleteBtn.style.color = 'white';
+    deleteBtn.style.border = 'none';
     deleteBtn.style.marginLeft = '10px';
     deleteBtn.onclick = () => {
         li.remove();
@@ -60,7 +63,8 @@ function saveNote(noteText) {
     // Notla birlikte tarih bilgisini kaydediyoruz
     const date = new Date();
     const dateString = date.toLocaleString(); // Örn: 03/05/2025, 15:30:00
-    notes.push({text: noteText, date: dateString});
+    const noteId = notes.length > 0 ? notes[notes.length - 1].id + 1 : 0 // ID'yi otomatik artırıyoruz
+    notes.push({id: noteId, text: noteText, date: dateString});
 
     fs.writeFileSync(notesFilePath, JSON.stringify(notes, null, 2));
 }
