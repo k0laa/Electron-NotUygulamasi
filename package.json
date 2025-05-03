@@ -1,0 +1,24 @@
+{
+  "name": "electron-notuygulamasi",
+  "version": "1.0.0",
+  "description": "Electron kullanarak yaptığım ilk projem. Basit bir not uygulmasıdır.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k0laa/Electron-NotUygulamasi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k0laa/Electron-NotUygulamasi/issues"
+  },
+  "homepage": "https://github.com/k0laa/Electron-NotUygulamasi#readme",
+  "devDependencies": {
+    "electron": "^36.1.0"
+  }
+}
