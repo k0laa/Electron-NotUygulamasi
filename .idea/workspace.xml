@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1365b1de-f86f-40ef-bb56-d095e5e556f0" name="Changes" comment="Electron uygulaması kuruldu." />
+    <list default="true" id="1365b1de-f86f-40ef-bb56-d095e5e556f0" name="Changes" comment="bugfix.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "k0laa"
-  }
+  "lastFilter": {}
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
@@ -33,6 +34,9 @@
     "accountId": "932561c9-3c48-41de-8a54-32674792a87d"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -55,6 +59,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\bugra\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746277267695</updated>
       <workItem from="1746277268801" duration="566000" />
-      <workItem from="1746277881394" duration="757000" />
+      <workItem from="1746277881394" duration="1583000" />
     </task>
     <task id="LOCAL-00001" summary="Electron uygulaması kuruldu.">
       <option name="closed" value="true" />
@@ -100,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746278046095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Geçici not alma işlevi eklendi.">
+      <option name="closed" value="true" />
+      <created>1746278822880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746278822880</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bugfix.">
+      <option name="closed" value="true" />
+      <created>1746278853440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746278853440</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Electron uygulaması kuruldu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Electron uygulaması kuruldu." />
+    <MESSAGE value="Geçici not alma işlevi eklendi." />
+    <MESSAGE value="bugfix." />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix." />
   </component>
 </project>

@@ -37,20 +37,6 @@
 
 <ul id="noteList"></ul>
 
-<script>
-    const noteInput = document.getElementById('noteInput');
-    const noteList = document.getElementById('noteList');
-
-    function addNote() {
-        const noteText = noteInput.value.trim();
-        if (noteText === '') return;
-
-        const li = document.createElement('li');
-        li.textContent = noteText;
-        noteList.appendChild(li);
-
-        noteInput.value = '';
-    }
-</script>
+<script src="./src/renderer/notes.js"></script>
 </body>
 </html>
